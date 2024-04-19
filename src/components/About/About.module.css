@@ -5,13 +5,14 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    background:linear-gradient(rgb(226, 226, 226),rgb(76, 76, 76))
 }
 #section{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: green; */
+    
 }
 
 #main{
@@ -34,6 +35,8 @@
 #container img{
     aspect-ratio: 1/1;
     height: 500px;
+    border: 5px dashed black;
+    border-radius: 50%;
 
 }
 
@@ -57,16 +60,24 @@
     background: #000;
     /* margin-left: 15%; */
 }
+
+#wrapper h1{
+    color:white;
+}
 #skills{
     display: flex;
     align-items:start;
     flex-direction: column;
     width: 70%;
     font-size:2rem;
+    color: rgb(255, 255, 255);
 }
 
-#skills p,#skills h4{
-    display: inline;
+#skills p{
     margin: 25px;
     padding: 5px;
+}
+
+#skills strong{
+    font-size: 2.5rem;
 }

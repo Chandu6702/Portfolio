@@ -8,11 +8,21 @@
     font-size: 30px;
     color: white;
 }
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 
 #nav-links{
     width: 40%;
     display: flex;
     justify-content: space-around;
+}
+.active{
+    background-color: rgb(101, 99, 99);
+    padding: 5px;
+    border-radius: 10px;
 }
 
 #nav-links a{

@@ -5,12 +5,12 @@ import { Link, NavLink } from 'react-router-dom'
 function Header() {
   return (
     <nav className={Styles['nav-bar']}>
-      <p>Sarma's Portfolio</p>
+      <NavLink t0='/'>Sarma's Portfolio</NavLink>
       <div id={Styles['nav-links']}>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='about'>About</NavLink>
-        <Link to='https://github.com/Chandu6702' target='_blank'>Projects</Link>
-        <NavLink to='contact'>Contact</NavLink>
+        <NavLink to='/' className={({isActive})=>(isActive?Styles['active']:"")}>Home</NavLink>
+        <NavLink to='about' className={({isActive})=>(isActive?Styles['active']:"")}>About</NavLink>
+        <Link to='https://github.com/Chandu6702?tab=repositories' target='_blank'>Projects</Link>
+        <NavLink  to='contact' className={({isActive})=>(isActive?Styles['active']:"")}>Contact</NavLink>
       </div>
     </nav>
   )

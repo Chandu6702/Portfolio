@@ -1,0 +1,23 @@
+#container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(rgb(226, 226, 226),rgb(76, 76, 76))
+}
+
+#main img{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+#main{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    border: 5px solid black;
+    border-radius: 10px;
+}
